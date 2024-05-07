@@ -40,7 +40,7 @@ function highlightKeywords(template, keywords) {
 
     const processed = [];
     parts.forEach((part, index) => {
-        processed.push(part); // Push the current part
+        processed.push(part);
 
         if (index < keywords.length) {
             processed.push(`<span class='highlight'>${keywords[index]}</span>`);
